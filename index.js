@@ -13,6 +13,24 @@ const proyectos = [{
 }
 ]
 
+//Codigo para esconder nav
+let lastScrollTop = 0;
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > lastScrollTop) {
+        navbar.style.top = "-100px";
+    } else {
+        navbar.style.top = "0";
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});
+
+//Codigo paramostrar cards
+
 const container = document.querySelector(".row");
 
 // Renderizado dinámico:
@@ -33,3 +51,4 @@ proyectos.forEach(project => {
     `;
     container.appendChild(card);
 });
+
