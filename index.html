@@ -21,19 +21,27 @@
             </div>
 
             <!-- Links a la derecha del SVG -->
-            <div class="nav-links d-flex justify-content-around flex-wrap gap-4 ps-4 align-items-center" style="flex: 1;">
-                <a class="navText text-white text-decoration-none" href="#">[E-Commers]</a>
-                <a class="navText text-white text-decoration-none" href="#">[WordPress Website]</a>
-                <a class="navText text-white text-decoration-none" href="#">[gigs/Resolucion de Bugs]</a>
-                <a class="navText text-white text-decoration-none" href="#">[Bases de Datos]</a>
+            <div class="nav-links d-flex justify-content-around flex-wrap gap-4 ps-4 align-items-center" style="flex: 1;" id="opcionNav">
+                <!--Inyecto las opciones-->
+                <a class="navText text-white text-decoration-none" href="#" id="contacto">[contacto]</a>
             </div>
         </div>
     </nav>
 </header>
 <!--Landing-->
-<div class="row row-cols-1 row-cols-md-2 g-4">
+<div class="row row-cols-1 row-cols-md-2 g-4" id="landingCards">
 <!--Inyecto las cards-->
 </div>
+<!--Inyecto el modal-->
+<div class="containerCard d-none container mt-4" id="modalContainer">
+    <button class="btn btn-secondary mb-3" id="btnVolver">Volver</button>
+    <div id="modalContent" class="row row-cols-1 row-cols-md-2 g-4">
+        <!-- Se inyectan los elementos del proyecto -->
+    </div>
+</div>
+
+
+
 <script src="index.js"></script>
 </body>
 <footer>
